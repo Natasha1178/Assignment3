@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+  <h5>GENRE</h5>
+      <div class="search-form-container">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for Genre..."
+        />
+        <button id="searchBtn">GENRE</button>
+      </div>
+      <h5>YEAR</h5>
+      <div class="search-form-container">
+        <input
+          id="searchYear"
+          type="text"
+          placeholder="Search YEAR"
+        />
+        <button id="searchBtn">YEAR</button>
+      </div>
+      <h5>LANGUAGE</h5>
+      <div class="search-form-container">
+        <input
+          id="searchLang"
+          type="text"
+          placeholder="Search LANGUAGE"
+        />
+        <button id="searchBtn">LANGUAGE</button>
+      </div>
+      
+      <h5>RATING</h5>
+  <div class="search-form-container">
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search RATING"
+    />
+  </div>
+  <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">MOVIE</th>
+            <th scope="col">YEAR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td class="img"></td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+    <div>
+    </div>
+
+
+
+
+    <script>
+      fetch("./data.json")
+      .then(response => response.json())
+      .then(data =>{
+        console.log(data);
+      });
+    </script>
+</body>
+</html>

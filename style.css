@@ -1,0 +1,15 @@
+.heading{
+    margin-top: 40px;
+}
+.form-select{
+    padding-right: 11rem;
+    padding-top: 5px;
+    padding-bottom:3px;
+    border-radius: 5px;
+}
+.Genre{
+    display: inline !important; 
+}
+.table{
+    justify-content: space-around !important;
+}
